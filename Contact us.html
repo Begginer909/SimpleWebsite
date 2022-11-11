@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	
+	<a href="Home.html">
+			<img src="Images/info_logo.png" alt="" >
+			</a>
+	<div class="wrapper">
+		<h2>Contact us</h2>
+		<div id="error_message"></div>
+		<div id="sucess_message"></div>
+		<form id="myform" onsubmit="return validation()">
+			<div class="input_field">
+				<input type="text" placeholder="Name" id="name">
+			</div>
+			<div class="input_field">
+				<input type="text" placeholder="Subject" id="subject">
+			</div>
+			<div class="input_field">
+				<input type="text" placeholder="Phone" id="phone">
+			</div>
+			<div class="input_field">
+				<input type="text" placeholder="Email" id="email">
+			<div class="input_field">
+				<textarea id="message" placeholder="Message"></textarea>
+			</div>
+			<div class="btn">
+				<button type="submit" id="submit"> Submit</button>
+			</div>
+			<div class="btn">
+				<button onclick="myFunction()" class="back"><a href="Home.html">Back</a></button>
+			</div>
+		</form>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
